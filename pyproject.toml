@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "kalman-sandbox"
+version = "0.1.0"
+description = "From-scratch Kalman filter + Bayes net over a 2D target-tracking sim (interview prep)"
+authors = ["Nick Russo <nick.s.russo@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "kalman_sandbox" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+matplotlib = "^3.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
